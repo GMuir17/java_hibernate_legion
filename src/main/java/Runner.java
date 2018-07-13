@@ -63,7 +63,7 @@ public class Runner {
         legion.setName("The 22nd");
         DBHelper.update(legion);
 
-
+        DBHelper.delete(provincial4);
 
     }
 
