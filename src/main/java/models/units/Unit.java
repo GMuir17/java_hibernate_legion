@@ -3,9 +3,12 @@ package models.units;
 import models.Legion;
 import models.soldiers.Centurion;
 
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
+import javax.persistence.*;
 
+@Entity
+@Table(name = "units")
+@Inheritance(strategy = InheritanceType.JOINED)
+@DiscriminatorColumn(name = "unit_type")
 public abstract class Unit {
 
     private int id;
@@ -20,6 +23,9 @@ public abstract class Unit {
         this.legion = legion;
     }
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     public int getId() {
         return id;
     }
@@ -28,6 +34,7 @@ public abstract class Unit {
         this.id = id;
     }
 
+    @Column(name = "name")
     public String getName() {
         return name;
     }
