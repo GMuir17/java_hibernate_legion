@@ -1,9 +1,9 @@
 package models;
 
+import models.units.Cohort;
+import models.units.Unit;
 import org.junit.Before;
 import org.junit.Test;
-
-import javax.persistence.Temporal;
 
 import java.util.ArrayList;
 
@@ -13,13 +13,13 @@ public class LegionTest {
 
     Legion legion;
     General general;
-    Unit unit;
+    Cohort cohort;
 
     @Before
     public void before() {
         this.legion = new Legion("The 10th");
         this.general = new General("Agrippa", legion);
-        this.unit = new Unit();
+        this.cohort = new Cohort();
     }
 
     @Test
@@ -76,8 +76,8 @@ public class LegionTest {
     }
 
     @Test
-    public void canAddUnit() {
-        legion.addUnit(unit);
+    public void canAddCohort() {
+        legion.addUnit(cohort);
         assertEquals(1, legion.getUnits().size());
     }
 
