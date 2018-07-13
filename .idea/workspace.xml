@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fd68233b-af9b-4d3e-bc20-231a605ed198" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Runner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/db/HibernateUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/General.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/Legion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/Unit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/models/LegionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/models/LegionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/models/LegionTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -31,7 +20,7 @@
           <file leaf-file-name="Legion.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/models/Legion.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="50">
+                <state relative-caret-position="261">
                   <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
                   <folding>
                     <element signature="imports" expanded="true" />
@@ -81,8 +70,8 @@
           <file leaf-file-name="LegionTest.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/models/LegionTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="447">
-                  <caret line="62" column="5" lean-forward="true" selection-start-line="62" selection-start-column="5" selection-end-line="66" selection-end-column="7" />
+                <state relative-caret-position="336">
+                  <caret line="71" column="48" selection-start-line="71" selection-start-column="48" selection-end-line="71" selection-end-column="48" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#310#311#0" expanded="true" />
@@ -92,6 +81,9 @@
                     <element signature="e#810#811#0" expanded="true" />
                     <element signature="e#857#858#0" expanded="true" />
                     <element signature="e#1173#1179#0" expanded="true" />
+                    <element signature="e#1337#1343#0" expanded="true" />
+                    <element signature="e#1483#1484#0" expanded="true" />
+                    <element signature="e#1513#1514#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -219,9 +211,32 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.LegionTest.canSetUnits">
+  <component name="RunManager" selected="JUnit.LegionTest.canAddUnit">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="LegionTest.canAddUnit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LegionWkndHW" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="models.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="models" />
+      <option name="MAIN_CLASS_NAME" value="models.LegionTest" />
+      <option name="METHOD_NAME" value="canAddUnit" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
     <configuration name="LegionTest.canSetId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LegionWkndHW" />
@@ -269,29 +284,6 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="LegionTest.hasId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LegionWkndHW" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="models.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="models" />
-      <option name="MAIN_CLASS_NAME" value="models.LegionTest" />
-      <option name="METHOD_NAME" value="hasId" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
     <configuration name="LegionTest.hasUnits" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LegionWkndHW" />
       <extension name="coverage">
@@ -305,6 +297,29 @@
       <option name="PACKAGE_NAME" value="models" />
       <option name="MAIN_CLASS_NAME" value="models.LegionTest" />
       <option name="METHOD_NAME" value="hasUnits" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="LegionTest.unitsListStartsEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LegionWkndHW" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="models.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="models" />
+      <option name="MAIN_CLASS_NAME" value="models.LegionTest" />
+      <option name="METHOD_NAME" value="unitsListStartsEmpty" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -354,17 +369,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="JUnit.LegionTest.hasId" />
       <item itemvalue="JUnit.LegionTest.canSetId" />
       <item itemvalue="JUnit.LegionTest.hasUnits" />
       <item itemvalue="JUnit.LegionTest.canSetUnits" />
+      <item itemvalue="JUnit.LegionTest.unitsListStartsEmpty" />
+      <item itemvalue="JUnit.LegionTest.canAddUnit" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LegionTest.canAddUnit" />
+        <item itemvalue="JUnit.LegionTest.unitsListStartsEmpty" />
         <item itemvalue="JUnit.LegionTest.canSetUnits" />
         <item itemvalue="JUnit.LegionTest.hasUnits" />
         <item itemvalue="JUnit.LegionTest.canSetId" />
-        <item itemvalue="JUnit.LegionTest.hasId" />
       </list>
     </recent_temporary>
   </component>
@@ -394,6 +411,12 @@
     <history-entry file="LegionTest_canSetId - 2018.07.13 at 11h 33m 51s.xml">
       <configuration name="LegionTest.canSetId" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="LegionTest_hasUnits - 2018.07.13 at 11h 36m 51s.xml">
+      <configuration name="LegionTest.hasUnits" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LegionTest_canSetUnits - 2018.07.13 at 11h 37m 38s.xml">
+      <configuration name="LegionTest.canSetUnits" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -409,7 +432,7 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32965517" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3089655" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3075862" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16235864" />
@@ -480,7 +503,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/models/Legion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
+        <state relative-caret-position="261">
           <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -506,8 +529,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/models/LegionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="62" column="5" lean-forward="true" selection-start-line="62" selection-start-column="5" selection-end-line="66" selection-end-column="7" />
+        <state relative-caret-position="336">
+          <caret line="71" column="48" selection-start-line="71" selection-start-column="48" selection-end-line="71" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#310#311#0" expanded="true" />
@@ -517,6 +540,9 @@
             <element signature="e#810#811#0" expanded="true" />
             <element signature="e#857#858#0" expanded="true" />
             <element signature="e#1173#1179#0" expanded="true" />
+            <element signature="e#1337#1343#0" expanded="true" />
+            <element signature="e#1483#1484#0" expanded="true" />
+            <element signature="e#1513#1514#0" expanded="true" />
           </folding>
         </state>
       </provider>

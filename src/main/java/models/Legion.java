@@ -48,4 +48,8 @@ public class Legion {
     public void setUnits(List<Unit> units) {
         this.units = units;
     }
+
+    public void addUnit(Unit unit) {
+        this.units.add(unit);
+    }
 }

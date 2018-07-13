@@ -13,11 +13,13 @@ public class LegionTest {
 
     Legion legion;
     General general;
+    Unit unit;
 
     @Before
     public void before() {
         this.legion = new Legion("The 10th");
         this.general = new General();
+        this.unit = new Unit();
     }
 
     @Test
@@ -65,6 +67,17 @@ public class LegionTest {
         ArrayList<Unit> results = new ArrayList<Unit>();
         legion.setUnits(results);
         assertEquals(results, legion.getUnits());
+    }
+
+    @Test
+    public void unitsListStartsEmpty() {
+        assertEquals(0, legion.getUnits().size());
+    }
+
+    @Test
+    public void canAddUnit() {
+        legion.addUnit(unit);
+        assertEquals(1, legion.getUnits().size());
     }
 
 
