@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fd68233b-af9b-4d3e-bc20-231a605ed198" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/soldiers/Centurion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/soldiers/Centurion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/soldiers/Soldier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/soldiers/Soldier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/units/Auxilia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/units/Auxilia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/soldiers/Citizen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/soldiers/Citizen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/models/units/Cohort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/units/Cohort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/units/Unit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/units/Unit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/models/soldiers/CenturionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/models/soldiers/CenturionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/models/soldiers/CitizenTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/models/soldiers/CitizenTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -19,115 +16,59 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="Legion.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/models/Legion.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="433">
-                  <caret line="53" column="58" selection-start-line="53" selection-start-column="58" selection-end-line="53" selection-end-column="58" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Unit.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/models/units/Unit.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="145">
-                  <caret line="45" column="6" selection-start-line="45" selection-start-column="6" selection-end-line="45" selection-end-column="6" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#276#277#0" expanded="true" />
-                    <element signature="e#301#302#0" expanded="true" />
-                    <element signature="e#785#786#0" expanded="true" />
-                    <element signature="e#814#815#0" expanded="true" />
-                    <element signature="e#858#859#0" expanded="true" />
-                    <element signature="e#894#895#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Centurion.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/models/soldiers/Centurion.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="420">
-                  <caret line="36" column="36" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#758#759#0" expanded="true" />
-                    <element signature="e#779#780#0" expanded="true" />
-                    <element signature="e#860#861#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Cohort.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/java/models/units/Cohort.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="24" selection-start-line="24" selection-end-line="25" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Auxilia.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/models/units/Auxilia.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="23" column="59" selection-start-line="23" selection-start-column="59" selection-end-line="23" selection-end-column="59" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="General.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/models/General.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="262">
-                  <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-                  <folding>
-                    <element signature="e#274#275#0" expanded="true" />
-                    <element signature="e#299#300#0" expanded="true" />
-                    <element signature="e#776#777#0" expanded="true" />
-                    <element signature="e#805#806#0" expanded="true" />
-                    <element signature="e#849#850#0" expanded="true" />
-                    <element signature="e#885#886#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="CenturionTest.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/test/java/models/soldiers/CenturionTest.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1230">
-                  <caret line="84" column="49" selection-start-line="84" selection-start-column="49" selection-end-line="84" selection-end-column="49" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#338#339#0" expanded="true" />
-                    <element signature="e#388#389#0" expanded="true" />
-                    <element signature="e#1694#1695#0" expanded="true" />
-                    <element signature="e#1724#1725#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Cohort.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/models/units/Cohort.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Auxilia.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/models/units/Auxilia.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="23" column="59" selection-start-line="23" selection-start-column="59" selection-end-line="23" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Citizen.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/models/soldiers/Citizen.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#460#461#0" expanded="true" />
+                <element signature="e#489#490#0" expanded="true" />
+                <element signature="e#533#534#0" expanded="true" />
+                <element signature="e#569#570#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CitizenTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/models/soldiers/CitizenTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="975">
+              <caret line="73" column="5" lean-forward="true" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1408#1409#0" expanded="true" />
+                <element signature="e#1438#1439#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -160,8 +101,6 @@
         <option value="$PROJECT_DIR$/src/test/java/models/LegionTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/models/UnitTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/soldiers/EquipmentType.java" />
-        <option value="$PROJECT_DIR$/src/main/java/models/soldiers/Citizen.java" />
-        <option value="$PROJECT_DIR$/src/test/java/models/soldiers/CitizenTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/soldiers/ProvinceType.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/soldiers/OriginType.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/soldiers/Provincial.java" />
@@ -171,12 +110,14 @@
         <option value="$PROJECT_DIR$/src/main/java/models/Legion.java" />
         <option value="$PROJECT_DIR$/src/test/java/models/CohortTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/models/AuxiliaTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/models/units/Unit.java" />
-        <option value="$PROJECT_DIR$/src/main/java/models/units/Cohort.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/soldiers/Soldier.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/units/Auxilia.java" />
-        <option value="$PROJECT_DIR$/src/main/java/models/soldiers/Centurion.java" />
         <option value="$PROJECT_DIR$/src/test/java/models/soldiers/CenturionTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/models/units/Unit.java" />
+        <option value="$PROJECT_DIR$/src/main/java/models/soldiers/Centurion.java" />
+        <option value="$PROJECT_DIR$/src/main/java/models/units/Cohort.java" />
+        <option value="$PROJECT_DIR$/src/test/java/models/soldiers/CitizenTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/models/soldiers/Citizen.java" />
       </list>
     </option>
   </component>
@@ -311,7 +252,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CenturionTest">
+  <component name="RunManager" selected="JUnit.CitizenTest">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -471,11 +412,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CitizenTest" />
         <item itemvalue="JUnit.CenturionTest" />
         <item itemvalue="JUnit.All in LegionWkndHW" />
         <item itemvalue="JUnit.CohortTest" />
         <item itemvalue="JUnit.ProvincialTest" />
-        <item itemvalue="JUnit.CitizenTest" />
       </list>
     </recent_temporary>
   </component>
@@ -493,9 +434,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LegionTest_canAddCohort - 2018.07.13 at 11h 58m 02s.xml">
-      <configuration name="LegionTest.canAddCohort" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CohortTest - 2018.07.13 at 12h 08m 55s.xml">
       <configuration name="CohortTest" configurationId="JUnit" />
     </history-entry>
@@ -522,6 +460,9 @@
     </history-entry>
     <history-entry file="All_in_LegionWkndHW - 2018.07.13 at 13h 59m 24s.xml">
       <configuration name="All in LegionWkndHW" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CenturionTest - 2018.07.13 at 14h 20m 41s.xml">
+      <configuration name="CenturionTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -654,26 +595,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/models/soldiers/CitizenTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#208#209#0" expanded="true" />
-            <element signature="e#291#292#0" expanded="true" />
-            <element signature="e#328#329#0" expanded="true" />
-            <element signature="e#376#377#0" expanded="true" />
-            <element signature="e#531#532#0" expanded="true" />
-            <element signature="e#588#589#0" expanded="true" />
-            <element signature="e#768#769#0" expanded="true" />
-            <element signature="e#842#843#0" expanded="true" />
-            <element signature="e#1066#1067#0" expanded="true" />
-            <element signature="e#1127#1128#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/models/soldiers/ProvincialTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -692,17 +613,6 @@
             <element signature="e#1130#1131#0" expanded="true" />
             <element signature="e#1385#1386#0" expanded="true" />
             <element signature="e#1415#1416#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/soldiers/Citizen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#173#174#0" expanded="true" />
-            <element signature="e#227#228#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -757,6 +667,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/models/soldiers/CenturionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1230">
+          <caret line="84" column="49" selection-start-line="84" selection-start-column="49" selection-end-line="84" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#338#339#0" expanded="true" />
+            <element signature="e#388#389#0" expanded="true" />
+            <element signature="e#1694#1695#0" expanded="true" />
+            <element signature="e#1724#1725#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/soldiers/Centurion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#758#759#0" expanded="true" />
+            <element signature="e#779#780#0" expanded="true" />
+            <element signature="e#828#829#0" expanded="true" />
+            <element signature="e#860#861#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/units/Unit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="45" column="6" selection-start-line="45" selection-start-column="6" selection-end-line="45" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#276#277#0" expanded="true" />
+            <element signature="e#301#302#0" expanded="true" />
+            <element signature="e#785#786#0" expanded="true" />
+            <element signature="e#814#815#0" expanded="true" />
+            <element signature="e#858#859#0" expanded="true" />
+            <element signature="e#894#895#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/models/General.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="262">
@@ -772,6 +726,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/soldiers/Soldier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="52" column="16" lean-forward="true" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/models/units/Auxilia.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -779,62 +740,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/soldiers/Soldier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="52" column="16" lean-forward="true" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/units/Unit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="45" column="6" selection-start-line="45" selection-start-column="6" selection-end-line="45" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#276#277#0" expanded="true" />
-            <element signature="e#301#302#0" expanded="true" />
-            <element signature="e#785#786#0" expanded="true" />
-            <element signature="e#814#815#0" expanded="true" />
-            <element signature="e#858#859#0" expanded="true" />
-            <element signature="e#894#895#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/soldiers/Centurion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="36" column="36" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#758#759#0" expanded="true" />
-            <element signature="e#779#780#0" expanded="true" />
-            <element signature="e#860#861#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/models/units/Cohort.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="24" selection-start-line="24" selection-end-line="25" />
+          <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/models/soldiers/CenturionTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/soldiers/Citizen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1230">
-          <caret line="84" column="49" selection-start-line="84" selection-start-column="49" selection-end-line="84" selection-end-column="49" />
+        <state relative-caret-position="180">
+          <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#338#339#0" expanded="true" />
-            <element signature="e#388#389#0" expanded="true" />
-            <element signature="e#1694#1695#0" expanded="true" />
-            <element signature="e#1724#1725#0" expanded="true" />
+            <element signature="e#460#461#0" expanded="true" />
+            <element signature="e#489#490#0" expanded="true" />
+            <element signature="e#533#534#0" expanded="true" />
+            <element signature="e#569#570#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/models/soldiers/CitizenTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="975">
+          <caret line="73" column="5" lean-forward="true" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1408#1409#0" expanded="true" />
+            <element signature="e#1438#1439#0" expanded="true" />
           </folding>
         </state>
       </provider>

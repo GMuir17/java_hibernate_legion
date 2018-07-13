@@ -5,6 +5,8 @@ import models.soldiers.Citizen;
 import models.units.Unit;
 
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import java.util.ArrayList;
 import java.util.List;
@@ -22,7 +24,8 @@ public class Cohort extends Unit {
         this.soldiers = new ArrayList<Citizen>();
     }
 
-    //TODO: set up one to many relationship between cohort and citizens
+    //set up one to many relationship between cohort and citizens
+    @OneToMany(mappedBy = "cohort", fetch = FetchType.LAZY)
     public List<Citizen> getSoldiers() {
         return soldiers;
     }
