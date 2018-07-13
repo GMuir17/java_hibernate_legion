@@ -59,6 +59,11 @@ public class Runner {
         Provincial provincial4 = new Provincial("Vercingetorix", EquipmentType.SHIELD, 24, auxilia1, OriginType.GAUL);
         DBHelper.save(provincial4);
 
+        //CRUD tests
+        legion.setName("The 22nd");
+        DBHelper.update(legion);
+
+
 
     }
 
