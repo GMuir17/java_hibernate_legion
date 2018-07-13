@@ -5,6 +5,8 @@ import models.soldiers.*;
 import models.units.Auxilia;
 import models.units.Cohort;
 
+import java.util.List;
+
 public class Runner {
 
     public static void main(String[] args) {
@@ -64,6 +66,8 @@ public class Runner {
         DBHelper.update(legion);
 
         DBHelper.delete(provincial4);
+
+        List<Soldier> centurions = DBHelper.getAll(Centurion.class);
 
     }
 
