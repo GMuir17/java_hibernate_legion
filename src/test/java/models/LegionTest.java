@@ -18,7 +18,7 @@ public class LegionTest {
     @Before
     public void before() {
         this.legion = new Legion("The 10th");
-        this.general = new General();
+        this.general = new General("Agrippa", legion);
         this.unit = new Unit();
     }
 
@@ -46,12 +46,13 @@ public class LegionTest {
 
     @Test
     public void hasGeneral() {
+        legion.setGeneral(general);
         assertEquals(general, legion.getGeneral());
     }
 
     @Test
     public void canSetGeneral() {
-        General general2 = new General();
+        General general2 = new General("Julius", legion);
         legion.setGeneral(general2);
         assertEquals(general2, legion.getGeneral());
     }
