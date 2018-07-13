@@ -43,6 +43,8 @@ public abstract class Unit {
         this.name = name;
     }
 
+    //one to one relationship between unit and centurion
+    @OneToOne(mappedBy = "unit", fetch = FetchType.LAZY)
     public Centurion getCenturion() {
         return centurion;
     }

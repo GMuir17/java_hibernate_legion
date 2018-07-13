@@ -1,5 +1,7 @@
 package models.soldiers;
 
+import models.units.Auxilia;
+import models.units.Cohort;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -8,10 +10,12 @@ import static org.junit.Assert.assertEquals;
 public class CenturionTest {
 
     Centurion centurion;
+    Cohort cohort;
 
     @Before
     public void before() {
-        this.centurion = new Centurion("Marcus", EquipmentType.SHIELD, 20, 100);
+        this.cohort = new Cohort();
+        this.centurion = new Centurion("Marcus", EquipmentType.SHIELD, 20, 100, cohort);
     }
 
     @Test
@@ -67,5 +71,17 @@ public class CenturionTest {
     public void canSetPopularity() {
         centurion.setPopularity(5);
         assertEquals(5, centurion.getPopularity());
+    }
+
+    @Test
+    public void hasUnit() {
+        assertEquals(cohort, centurion.getUnit());
+    }
+
+    @Test
+    public void canSetUnitt() {
+        Auxilia auxilia = new Auxilia();
+        centurion.setUnit(auxilia);
+        assertEquals(auxilia, centurion.getUnit());
     }
 }

@@ -1,5 +1,11 @@
 package models.soldiers;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name = "soldiers")
+@Inheritance(strategy = InheritanceType.JOINED)
+@DiscriminatorColumn(name = "soldier_type")
 public abstract class Soldier {
 
     private int id;
@@ -15,6 +21,9 @@ public abstract class Soldier {
         this.yearsOfService = yearsOfService;
     }
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     public int getId() {
         return id;
     }
@@ -23,6 +32,7 @@ public abstract class Soldier {
         this.id = id;
     }
 
+    @Column(name = "name")
     public String getName() {
         return name;
     }
@@ -31,6 +41,7 @@ public abstract class Soldier {
         this.name = name;
     }
 
+    @Column(name = "equipment")
     public EquipmentType getEquipment() {
         return equipment;
     }
@@ -39,6 +50,7 @@ public abstract class Soldier {
         this.equipment = equipment;
     }
 
+    @Column(name = "years_of_service")
     public int getYearsOfService() {
         return yearsOfService;
     }
