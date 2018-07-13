@@ -3,8 +3,7 @@ package models.units;
 import models.Legion;
 import models.soldiers.Provincial;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,7 +20,8 @@ public class Auxilia extends Unit {
         this.soldiers = new ArrayList<Provincial>();
     }
 
-    //TODO: set up one to many relationship between auxilia and citizens
+    //set up one to many relationship between auxilia and citizens
+    @OneToMany(mappedBy = "auxilia", fetch = FetchType.LAZY)
     public List<Provincial> getSoldiers() {
         return soldiers;
     }

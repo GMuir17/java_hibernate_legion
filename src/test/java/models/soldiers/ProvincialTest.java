@@ -1,5 +1,6 @@
 package models.soldiers;
 
+import models.units.Auxilia;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -8,10 +9,12 @@ import static org.junit.Assert.assertEquals;
 public class ProvincialTest {
 
     Provincial provincial;
+    Auxilia auxilia;
 
     @Before
     public void before() {
-        this.provincial = new Provincial("Marcus", EquipmentType.SHIELD, 20, OriginType.GOTH);
+        this.auxilia = new Auxilia();
+        this.provincial = new Provincial("Marcus", EquipmentType.SHIELD, 20, auxilia, OriginType.GOTH);
     }
 
     @Test
@@ -67,5 +70,17 @@ public class ProvincialTest {
     public void canSetOrigin() {
         provincial.setOrigin(OriginType.VANDAL);
         assertEquals(OriginType.VANDAL, provincial.getOrigin());
+    }
+
+    @Test
+    public void hasAuxilia() {
+        assertEquals(auxilia, provincial.getAuxilia());
+    }
+
+    @Test
+    public void canSetAuxilia() {
+        Auxilia auxilia2 = new Auxilia();
+        provincial.setAuxilia(auxilia2);
+        assertEquals(auxilia2, provincial.getAuxilia());
     }
 }
