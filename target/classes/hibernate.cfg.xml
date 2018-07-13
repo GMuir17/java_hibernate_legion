@@ -11,7 +11,15 @@
         <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQL9Dialect</property>
         <property name="connection.pool_size">1</property>
         <property name="show_sql">true</property>
-        <!--TODO: map all the classes to db-->
+        <!--map all the classes to db-->
         <mapping class = "models.Legion"/>
+        <mapping class = "models.General"/>
+        <mapping class = "models.units.Unit"/>
+        <mapping class = "models.units.Cohort"/>
+        <mapping class = "models.units.Auxilia"/>
+        <mapping class = "models.soldiers.Soldier"/>
+        <mapping class = "models.soldiers.Provincial"/>
+        <mapping class = "models.soldiers.Citizen"/>
+        <mapping class = "models.soldiers.Centurion"/>
     </session-factory>
 </hibernate-configuration>

@@ -2,9 +2,12 @@ package models;
 
 import models.units.Unit;
 
+import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
+@Entity
+@Table(name = "legions")
 public class Legion {
 
     private int id;
@@ -19,6 +22,9 @@ public class Legion {
         this.units = new ArrayList<Unit>();
     }
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     public int getId() {
         return id;
     }
@@ -27,6 +33,7 @@ public class Legion {
         this.id = id;
     }
 
+    @Column(name = "name")
     public String getName() {
         return name;
     }
@@ -35,6 +42,7 @@ public class Legion {
         this.name = name;
     }
 
+    @OneToOne(mappedBy = "legion", fetch = FetchType.LAZY)
     public General getGeneral() {
         return general;
     }
@@ -43,6 +51,7 @@ public class Legion {
         this.general = general;
     }
 
+    @OneToMany(mappedBy = "legion", fetch = FetchType.LAZY)
     public List<Unit> getUnits() {
         return units;
     }

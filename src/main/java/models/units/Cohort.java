@@ -1,5 +1,6 @@
 package models.units;
 
+import models.Legion;
 import models.soldiers.Citizen;
 import models.units.Unit;
 
@@ -12,8 +13,8 @@ public class Cohort extends Unit {
 
     public Cohort() {}
 
-    public Cohort(String name) {
-        super(name);
+    public Cohort(String name, Legion legion) {
+        super(name, legion);
         this.soldiers = new ArrayList<Citizen>();
     }
 

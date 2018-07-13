@@ -15,12 +15,14 @@ public class CohortTest {
     Cohort cohort;
     Citizen citizen;
     Centurion centurion;
+    Legion legion;
 
     @Before
     public void before() {
+        this.legion = new Legion("apples");
         this.centurion = new Centurion();
         this.citizen = new Citizen();
-        this.cohort = new Cohort("banana");
+        this.cohort = new Cohort("banana", legion);
     }
 
     @Test
@@ -70,4 +72,15 @@ public class CohortTest {
         assertEquals(0, cohort.getSoldiers().size());
     }
 
+    @Test
+    public void hasLegion() {
+        assertEquals(legion, cohort.getLegion());
+    }
+
+    @Test
+    public void canSetLegion() {
+        Legion legion2 = new Legion("pears");
+        cohort.setLegion(legion2);
+        assertEquals(legion2, cohort.getLegion());
+    }
 }

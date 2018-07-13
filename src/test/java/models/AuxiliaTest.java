@@ -15,12 +15,14 @@ public class AuxiliaTest {
     Auxilia auxilia;
     Provincial citizen;
     Centurion centurion;
+    Legion legion;
 
     @Before
     public void before() {
+        this.legion = new Legion("apples");
         this.centurion = new Centurion();
         this.citizen = new Provincial();
-        this.auxilia = new Auxilia("banana");
+        this.auxilia = new Auxilia("banana", legion );
     }
 
     @Test
@@ -68,6 +70,18 @@ public class AuxiliaTest {
     @Test
     public void citizensListStartsEmpty() {
         assertEquals(0, auxilia.getSoldiers().size());
+    }
+
+    @Test
+    public void hasLegion() {
+        assertEquals(legion, auxilia.getLegion());
+    }
+
+    @Test
+    public void canSetLegion() {
+        Legion legion2 = new Legion("pears");
+        auxilia.setLegion(legion2);
+        assertEquals(legion2, auxilia.getLegion());
     }
 
 }

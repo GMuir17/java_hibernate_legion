@@ -1,5 +1,9 @@
 package models;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name = "generals")
 public class General {
 
     private int id;
@@ -13,6 +17,9 @@ public class General {
         this.legion = legion;
     }
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     public int getId() {
         return id;
     }
@@ -21,6 +28,7 @@ public class General {
         this.id = id;
     }
 
+    @Column(name = "name")
     public String getName() {
         return name;
     }
@@ -29,6 +37,8 @@ public class General {
         this.name = name;
     }
 
+    @OneToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "legion_id", nullable = false)
     public Legion getLegion() {
         return legion;
     }

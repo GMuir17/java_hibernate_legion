@@ -1,17 +1,23 @@
 package models.units;
 
+import models.Legion;
 import models.soldiers.Centurion;
+
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 
 public abstract class Unit {
 
     private int id;
     private String name;
     private Centurion centurion;
+    private Legion legion;
 
     public Unit() {}
 
-    public Unit(String name) {
+    public Unit(String name, Legion legion) {
         this.name = name;
+        this.legion = legion;
     }
 
     public int getId() {
@@ -36,5 +42,15 @@ public abstract class Unit {
 
     public void setCenturion(Centurion centurion) {
         this.centurion = centurion;
+    }
+
+    @ManyToOne
+    @JoinColumn(name = "legion_id", nullable = false)
+    public Legion getLegion() {
+        return legion;
+    }
+
+    public void setLegion(Legion legion) {
+        this.legion = legion;
     }
 }

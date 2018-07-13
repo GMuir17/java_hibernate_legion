@@ -1,5 +1,6 @@
 package models.units;
 
+import models.Legion;
 import models.soldiers.Provincial;
 
 import java.util.ArrayList;
@@ -11,8 +12,8 @@ public class Auxilia extends Unit {
 
     public Auxilia() {}
 
-    public Auxilia(String name) {
-        super(name);
+    public Auxilia(String name, Legion legion) {
+        super(name, legion);
         this.soldiers = new ArrayList<Provincial>();
     }
 
