@@ -29,6 +29,7 @@ public class Provincial extends Soldier{
         this.auxilia = auxilia;
     }
 
+    @Enumerated(value = EnumType.STRING)
     @Column(name = "origin")
     public OriginType getOrigin() {
         return origin;

@@ -5,7 +5,7 @@ import models.units.Unit;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "centurion")
+@Table(name = "centurions")
 public class Centurion extends Soldier {
 
     private int popularity;

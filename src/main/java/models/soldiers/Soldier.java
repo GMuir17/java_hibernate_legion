@@ -41,6 +41,7 @@ public abstract class Soldier {
         this.name = name;
     }
 
+    @Enumerated(value = EnumType.STRING)
     @Column(name = "equipment")
     public EquipmentType getEquipment() {
         return equipment;
