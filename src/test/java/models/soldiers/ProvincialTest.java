@@ -83,4 +83,21 @@ public class ProvincialTest {
         provincial.setAuxilia(auxilia2);
         assertEquals(auxilia2, provincial.getAuxilia());
     }
+
+    @Test
+    public void hasAvailability() {
+        assertEquals(true, provincial.getAvailability());
+    }
+
+    @Test
+    public void canSetAvailability() {
+        provincial.setAvailability(false);
+        assertEquals(false, provincial.getAvailability());
+    }
+
+    @Test
+    public void canChangeAvailabilityToFalseWithoutSetter() {
+        provincial.changeAvailabilityToFalse();
+        assertEquals(false, provincial.getAvailability());
+    }
 }

@@ -73,4 +73,21 @@ public class CitizenTest {
         assertEquals(cohort2, citizen.getCohort());
     }
 
+    @Test
+    public void hasAvailability() {
+        assertEquals(true, citizen.getAvailability());
+    }
+
+    @Test
+    public void canSetAvailability() {
+        citizen.setAvailability(false);
+        assertEquals(false, citizen.getAvailability());
+    }
+
+    @Test
+    public void canChangeAvailabilityToFalseWithoutSetter() {
+        citizen.changeAvailabilityToFalse();
+        assertEquals(false, citizen.getAvailability());
+    }
+
 }
