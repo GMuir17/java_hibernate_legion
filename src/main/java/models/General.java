@@ -9,6 +9,7 @@ public class General {
     private int id;
     private String name;
     private Legion legion;
+    // TODO: add int budget which will be used to pay soldiers
 
     public General() {}
 

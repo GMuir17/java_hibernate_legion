@@ -13,6 +13,7 @@ public abstract class Soldier {
     private EquipmentType equipment;
     private int yearsOfService;
     private boolean availability;
+    //TODO: add int purse which will represent the soldier's pay
 
     public Soldier() {}
 

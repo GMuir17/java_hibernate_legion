@@ -75,6 +75,10 @@ public class Runner {
         Soldier foundSoldier = DBHelper.findByName(Centurion.class, "Gaius Crastinus");
 
         List<Centurion> sortedCenturions = DBCenturion.sortByPopularity();
+
+        //TODO: create a new class called Battle which will take in 2 legions and return a winner (whose general gains budget), depending on number and composition of cohorts. Also need to double the size of the runner
+
+        //TODO: create DBGeneral with the method paySoldier(Soldier soldier) which takes money from General's budget and transfers to soldiers. Or maybe payUnit(Unit unit) which does the same thing to a unit before distributing it to soldiers??
     }
 
 }
