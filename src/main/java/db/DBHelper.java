@@ -19,10 +19,12 @@ public class DBHelper {
             transaction = session.beginTransaction();
             session.save(object);
             transaction.commit();
-        } catch (HibernateException e) {
+        }
+        catch (HibernateException e) {
             transaction.rollback();
             e.printStackTrace();
-        } finally {
+        }
+        finally {
             session.close();
         }
     }
@@ -33,10 +35,12 @@ public class DBHelper {
             transaction = session.beginTransaction();
             session.update(object);
             transaction.commit();
-        } catch (HibernateException e) {
+        }
+        catch (HibernateException e) {
             transaction.rollback();
             e.printStackTrace();
-        } finally {
+        }
+        finally {
             session.close();
         }
     }
@@ -47,10 +51,12 @@ public class DBHelper {
             transaction = session.beginTransaction();
             session.delete(object);
             transaction.commit();
-        } catch (HibernateException e) {
+        }
+        catch (HibernateException e) {
             transaction.rollback();
             e.printStackTrace();
-        } finally {
+        }
+        finally {
             session.close();
         }
     }
@@ -62,9 +68,11 @@ public class DBHelper {
         try {
             Criteria cr = session.createCriteria(classType);
             results = cr.list();
-        } catch (HibernateException e) {
+        }
+        catch (HibernateException e) {
             e.printStackTrace();
-        } finally {
+        }
+        finally {
             session.close();
         }
         return results;
@@ -77,11 +85,32 @@ public class DBHelper {
             Criteria cr = session.createCriteria(classType);
             cr.add(Restrictions.eq("id", id));
             result = (T) cr.uniqueResult();
-        } catch (HibernateException e) {
+        }
+        catch (HibernateException e) {
             e.printStackTrace();
-        } finally {
+        }
+        finally {
             session.close();
         }
+        return result;
+    }
+
+    public static <T> T findByName(Class classType, String name) {
+        session = HibernateUtil.getSessionFactory().openSession();
+        T result = null;
+        try {
+            Criteria cr = session.createCriteria(classType);
+            cr.add(Restrictions.eq("name", name));
+            result = (T) cr.uniqueResult();
+        }
+        catch(HibernateException e) {
+            e.printStackTrace();
+        }
+        finally {
+            session.close();
+        }
+
+
         return result;
     }
 }

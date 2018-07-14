@@ -70,6 +70,8 @@ public class Runner {
         List<Soldier> centurions = DBHelper.getAll(Centurion.class);
 
         Cohort foundCohort = DBHelper.findById(Cohort.class, cohort1.getId());
+
+        Soldier foundSoldier = DBHelper.findByName(Centurion.class, "Gaius Crastinus");
     }
 
 }
