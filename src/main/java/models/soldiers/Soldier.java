@@ -62,7 +62,7 @@ public abstract class Soldier {
         this.yearsOfService = yearsOfService;
     }
 
-    @Column(name = "available?")
+    @Column(name = "available")
     public boolean getAvailability() {
         return this.availability;
     }

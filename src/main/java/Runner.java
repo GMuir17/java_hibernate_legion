@@ -1,3 +1,4 @@
+import db.DBCenturion;
 import db.DBHelper;
 import models.General;
 import models.Legion;
@@ -72,6 +73,8 @@ public class Runner {
         Cohort foundCohort = DBHelper.findById(Cohort.class, cohort1.getId());
 
         Soldier foundSoldier = DBHelper.findByName(Centurion.class, "Gaius Crastinus");
+
+        List<Centurion> sortedCenturions = DBCenturion.sortByPopularity();
     }
 
 }
