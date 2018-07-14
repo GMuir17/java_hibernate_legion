@@ -70,4 +70,8 @@ public abstract class Soldier {
     public void setAvailability(boolean availability) {
         this.availability = availability;
     }
+
+    public void changeAvailabilityToFalse() {
+        this.availability = false;
+    }
 }

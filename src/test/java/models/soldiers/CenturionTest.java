@@ -95,4 +95,10 @@ public class CenturionTest {
         centurion.setAvailability(false);
         assertEquals(false, centurion.getAvailability());
     }
+
+    @Test
+    public void canChangeAvailabilityToFalseWithoutSetter() {
+        centurion.changeAvailabilityToFalse();
+        assertEquals(false, centurion.getAvailability());
+    }
 }
