@@ -12,6 +12,7 @@ public abstract class Soldier {
     private String name;
     private EquipmentType equipment;
     private int yearsOfService;
+    private boolean availability;
 
     public Soldier() {}
 
@@ -19,6 +20,7 @@ public abstract class Soldier {
         this.name = name;
         this.equipment = equipment;
         this.yearsOfService = yearsOfService;
+        this.availability = true;
     }
 
     @Id
@@ -58,5 +60,14 @@ public abstract class Soldier {
 
     public void setYearsOfService(int yearsOfService) {
         this.yearsOfService = yearsOfService;
+    }
+
+    @Column(name = "available?")
+    public boolean getAvailability() {
+        return this.availability;
+    }
+
+    public void setAvailability(boolean availability) {
+        this.availability = availability;
     }
 }

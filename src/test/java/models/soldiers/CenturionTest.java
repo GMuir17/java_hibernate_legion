@@ -79,9 +79,20 @@ public class CenturionTest {
     }
 
     @Test
-    public void canSetUnitt() {
+    public void canSetUnit() {
         Auxilia auxilia = new Auxilia();
         centurion.setUnit(auxilia);
         assertEquals(auxilia, centurion.getUnit());
+    }
+
+    @Test
+    public void hasAvailability() {
+        assertEquals(true, centurion.getAvailability());
+    }
+
+    @Test
+    public void canSetAvailability() {
+        centurion.setAvailability(false);
+        assertEquals(false, centurion.getAvailability());
     }
 }
