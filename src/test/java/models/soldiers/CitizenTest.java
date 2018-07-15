@@ -90,4 +90,15 @@ public class CitizenTest {
         assertEquals(false, citizen.getAvailability());
     }
 
+    @Test
+    public void hasPurse() {
+        assertEquals(0, citizen.getPurse());
+    }
+
+    @Test
+    public void canSetPurse() {
+        citizen.setPurse(10);
+        assertEquals(10, citizen.getPurse());
+    }
+
 }

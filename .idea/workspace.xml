@@ -277,7 +277,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CenturionTest.canSetPurse">
+  <component name="RunManager" selected="JUnit.All in LegionWkndHW">
     <configuration name="Runner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Runner" />
       <module name="LegionWkndHW" />
@@ -419,10 +419,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in LegionWkndHW" />
         <item itemvalue="JUnit.CenturionTest.canSetPurse" />
         <item itemvalue="JUnit.CenturionTest.hasPurse" />
         <item itemvalue="Application.Runner" />
-        <item itemvalue="JUnit.All in LegionWkndHW" />
         <item itemvalue="JUnit.CenturionTest.canChangeAvailabilityToFalseWithoutSetter" />
       </list>
     </recent_temporary>

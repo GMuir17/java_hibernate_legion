@@ -100,4 +100,15 @@ public class ProvincialTest {
         provincial.changeAvailabilityToFalse();
         assertEquals(false, provincial.getAvailability());
     }
+
+    @Test
+    public void hasPurse() {
+        assertEquals(0, provincial.getPurse());
+    }
+
+    @Test
+    public void canSetPurse() {
+        provincial.setPurse(10);
+        assertEquals(10, provincial.getPurse());
+    }
 }
