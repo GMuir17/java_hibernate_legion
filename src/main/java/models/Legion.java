@@ -1,6 +1,7 @@
 package models;
 
 import models.units.Unit;
+import org.hibernate.annotations.Cascade;
 
 import javax.persistence.*;
 import java.util.ArrayList;
@@ -14,7 +15,7 @@ public class Legion {
     private String name;
     private General general;
     private List<Unit> units;
-    private Battle battle;
+    private List<Battle> battles;
 
     public Legion() {}
 
@@ -65,13 +66,18 @@ public class Legion {
         this.units.add(unit);
     }
 
-    @ManyToOne
-    @JoinColumn(name = "battle_id", nullable = false)
-    public Battle getBattle() {
-        return battle;
+    @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
+    @ManyToMany
+    @JoinTable(
+            name = "battles_legions",
+            joinColumns = {@JoinColumn(name = "legion_id", nullable = false, updatable = false)},
+            inverseJoinColumns = {@JoinColumn(name = "battle_id", nullable = false, updatable = false)}
+    )
+    public List<Battle> getBattle() {
+        return battles;
     }
 
-    public void setBattle(Battle battle) {
-        this.battle = battle;
+    public void setBattle(List<Battle> battles) {
+        this.battles = battles;
     }
 }

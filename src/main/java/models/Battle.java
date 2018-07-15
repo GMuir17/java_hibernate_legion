@@ -1,5 +1,7 @@
 package models;
 
+import org.hibernate.annotations.Cascade;
+
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -39,7 +41,13 @@ public class Battle {
         this.name = name;
     }
 
-    @OneToMany(mappedBy = "battle", fetch = FetchType.LAZY)
+    @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
+    @ManyToMany
+    @JoinTable(
+            name = "battles_legions",
+            joinColumns = {@JoinColumn(name = "battle_id", nullable = false, updatable = false)},
+            inverseJoinColumns = {@JoinColumn(name = "legion_id", nullable = false, updatable = false)}
+    )
     public List<Legion> getLegions() {
         return legions;
     }

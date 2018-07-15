@@ -21,5 +21,6 @@
         <mapping class = "models.soldiers.Provincial"/>
         <mapping class = "models.soldiers.Citizen"/>
         <mapping class = "models.soldiers.Centurion"/>
+        <mapping class = "models.Battle"/>
     </session-factory>
 </hibernate-configuration>

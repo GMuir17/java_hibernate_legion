@@ -86,11 +86,11 @@ public class LegionTest {
         assertEquals(null, legion.getBattle());
     }
 
-    @Test
-    public void canSetBattle() {
-        Legion testLegion = new Legion("Test");
-        Battle testBattle = new Battle("Testing");
-        legion.setBattle(testBattle);
-        assertEquals(testBattle, legion.getBattle());
-    }
+//    @Test
+//    public void canSetBattle() {
+//        Legion testLegion = new Legion("Test");
+//        Battle testBattle = new Battle("Testing");
+//        legion.setBattle(testBattle);
+//        assertEquals(testBattle, legion.getBattle());
+//    }
 }

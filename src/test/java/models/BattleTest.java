@@ -26,7 +26,7 @@ public class BattleTest {
    }
 
    @Test
-   public void canSetLegions() {
+   public void canAddLegions() {
        battle.addLegion(legion1);
        battle.addLegion(legion2);
        assertEquals(2, battle.getLegions().size());
