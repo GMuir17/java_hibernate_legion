@@ -101,4 +101,15 @@ public class CenturionTest {
         centurion.changeAvailabilityToFalse();
         assertEquals(false, centurion.getAvailability());
     }
+
+    @Test
+    public void hasPurse() {
+        assertEquals(0, centurion.getPurse());
+    }
+
+    @Test
+    public void canSetPurse() {
+        centurion.setPurse(10);
+        assertEquals(10, centurion.getPurse());
+    }
 }

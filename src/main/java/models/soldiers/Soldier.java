@@ -14,6 +14,7 @@ public abstract class Soldier {
     private int yearsOfService;
     private boolean availability;
     //TODO: add int purse which will represent the soldier's pay
+    private int purse;
 
     public Soldier() {}
 
@@ -22,6 +23,7 @@ public abstract class Soldier {
         this.equipment = equipment;
         this.yearsOfService = yearsOfService;
         this.availability = true;
+        this.purse = purse;
     }
 
     @Id
@@ -75,4 +77,15 @@ public abstract class Soldier {
     public void changeAvailabilityToFalse() {
         this.availability = false;
     }
+
+    @Column(name = "purse")
+    public int getPurse() {
+        return purse;
+    }
+
+    public void setPurse(int purse) {
+        this.purse = purse;
+    }
+
+
 }
