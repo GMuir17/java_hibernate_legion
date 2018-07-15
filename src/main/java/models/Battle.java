@@ -8,12 +8,14 @@ import javax.persistence.Table;
 public class Battle {
 
     private int id;
+    private String name;
     private Legion legion1;
     private Legion legion2;
 
     public Battle() {}
 
-    public Battle(Legion legion1, Legion legion2) {
+    public Battle(String name, Legion legion1, Legion legion2) {
+        this.name = name;
         this.legion1 = legion1;
         this.legion2 = legion2;
     }
@@ -24,6 +26,14 @@ public class Battle {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public Legion getLegion1() {

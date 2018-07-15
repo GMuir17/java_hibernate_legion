@@ -15,7 +15,7 @@ public class BattleTest {
     public void before() {
         this.legion1 = new Legion("The 13th");
         this.legion2 = new Legion("The 2nd");
-        this.battle = new Battle(legion1, legion2);
+        this.battle = new Battle("Test battle", legion1, legion2);
     }
 
     @Test
@@ -51,5 +51,16 @@ public class BattleTest {
     public void canSetId() {
         battle.setId(5);
         assertEquals(5, battle.getId());
+    }
+
+    @Test
+    public void hasName() {
+        assertEquals("Test battle", battle.getName());
+    }
+
+    @Test
+    public void canSetName() {
+        battle.setName("Banana");
+        assertEquals("Banana", battle.getName());
     }
 }

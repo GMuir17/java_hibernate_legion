@@ -315,7 +315,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BattleTest.canSetId">
+  <component name="RunManager" selected="JUnit.BattleTest.canSetName">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -332,29 +332,6 @@
       <option name="PACKAGE_NAME" value="models" />
       <option name="MAIN_CLASS_NAME" value="models.BattleTest" />
       <option name="METHOD_NAME" value="canSetId" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="BattleTest.canSetLegion1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LegionWkndHW" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="models.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="models" />
-      <option name="MAIN_CLASS_NAME" value="models.BattleTest" />
-      <option name="METHOD_NAME" value="canSetLegion1" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -388,6 +365,29 @@
       </option>
       <patterns />
     </configuration>
+    <configuration name="BattleTest.canSetName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LegionWkndHW" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="models.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="models" />
+      <option name="MAIN_CLASS_NAME" value="models.BattleTest" />
+      <option name="METHOD_NAME" value="canSetName" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
     <configuration name="BattleTest.hasId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LegionWkndHW" />
       <extension name="coverage">
@@ -411,7 +411,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="BattleTest.hasLegion2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BattleTest.hasName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LegionWkndHW" />
       <extension name="coverage">
         <pattern>
@@ -423,7 +423,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="models" />
       <option name="MAIN_CLASS_NAME" value="models.BattleTest" />
-      <option name="METHOD_NAME" value="hasLegion2" />
+      <option name="METHOD_NAME" value="hasName" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -473,19 +473,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="JUnit.BattleTest.canSetLegion1" />
-      <item itemvalue="JUnit.BattleTest.hasLegion2" />
       <item itemvalue="JUnit.BattleTest.canSetLegion2" />
       <item itemvalue="JUnit.BattleTest.hasId" />
       <item itemvalue="JUnit.BattleTest.canSetId" />
+      <item itemvalue="JUnit.BattleTest.hasName" />
+      <item itemvalue="JUnit.BattleTest.canSetName" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BattleTest.canSetName" />
+        <item itemvalue="JUnit.BattleTest.hasName" />
         <item itemvalue="JUnit.BattleTest.canSetId" />
         <item itemvalue="JUnit.BattleTest.hasId" />
         <item itemvalue="JUnit.BattleTest.canSetLegion2" />
-        <item itemvalue="JUnit.BattleTest.hasLegion2" />
-        <item itemvalue="JUnit.BattleTest.canSetLegion1" />
       </list>
     </recent_temporary>
   </component>
