@@ -3,6 +3,8 @@ package models;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.List;
+
 import static org.junit.Assert.assertEquals;
 
 public class BattleTest {
@@ -15,32 +17,20 @@ public class BattleTest {
     public void before() {
         this.legion1 = new Legion("The 13th");
         this.legion2 = new Legion("The 2nd");
-        this.battle = new Battle("Test battle", legion1, legion2);
+        this.battle = new Battle("Test battle");
     }
 
-    @Test
-    public void hasLegion1() {
-        assertEquals(legion1, battle.getLegion1());
-    }
+   @Test
+   public void legionListStartsEmpty() {
+        assertEquals(0, battle.getLegions().size());
+   }
 
-    @Test
-    public void canSetLegion1() {
-        Legion testLegion = new Legion("Test");
-        battle.setLegion1(testLegion);
-        assertEquals(testLegion, battle.getLegion1());
-    }
-
-    @Test
-    public void hasLegion2() {
-        assertEquals(legion2, battle.getLegion2());
-    }
-
-    @Test
-    public void canSetLegion2() {
-        Legion testLegion = new Legion("Test");
-        battle.setLegion2(testLegion);
-        assertEquals(testLegion, battle.getLegion2());
-    }
+   @Test
+   public void canSetLegions() {
+       battle.addLegion(legion1);
+       battle.addLegion(legion2);
+       assertEquals(2, battle.getLegions().size());
+   }
 
     @Test
     public void hasId() {

@@ -1,11 +1,13 @@
 import db.DBCenturion;
 import db.DBHelper;
+import models.Battle;
 import models.General;
 import models.Legion;
 import models.soldiers.*;
 import models.units.Auxilia;
 import models.units.Cohort;
 
+import javax.persistence.GeneratedValue;
 import java.util.List;
 
 public class Runner {
@@ -13,12 +15,18 @@ public class Runner {
     public static void main(String[] args) {
 
         //legions
-        Legion legion = new Legion("The 10th");
+        Legion legion = new Legion("The 13th");
         DBHelper.save(legion);
 
+        Legion legion2 = new Legion("The 25th");
+        DBHelper.save(legion2);
+
         //generals
-        General general = new General("Julius Caesar", legion, 100);
+        General general = new General("Julius Caesar", legion, 1000000);
         DBHelper.save(general);
+
+        General general2 = new General("Pomey Magnus", legion2, 1000000);
+        DBHelper.save(general2);
 
         //cohorts
         Cohort cohort1 = new Cohort("The 1st", legion);
@@ -26,11 +34,21 @@ public class Runner {
         Cohort cohort2 = new Cohort("The 3rd", legion);
         DBHelper.save(cohort2);
 
+        Cohort cohort3 = new Cohort("The 5th", legion2);
+        DBHelper.save(cohort3);
+        Cohort cohort4 = new Cohort("The 4th", legion2);
+        DBHelper.save(cohort4);
+
         //auxiliaries
-        Auxilia auxilia1 = new Auxilia("5th Cohort of Britannia", legion);
+        Auxilia auxilia1 = new Auxilia("5th Cohort of Espania", legion);
         DBHelper.save(auxilia1);
         Auxilia auxilia2 = new Auxilia("2nd Cohort of Gaul", legion);
         DBHelper.save(auxilia2);
+
+        Auxilia auxilia3 = new Auxilia("5th Cohort of Syria", legion2);
+        DBHelper.save(auxilia3);
+        Auxilia auxilia4 = new Auxilia("2nd Cohort of Asia", legion2);
+        DBHelper.save(auxilia4);
 
         //centurions
         Centurion centurion1 = new Centurion("Lucius Vorenus", EquipmentType.GLADIUS, 20, 95, cohort1);
@@ -42,6 +60,15 @@ public class Runner {
         Centurion centurion4 = new Centurion("Potitus Avitus", EquipmentType.GLADIUS, 30, 100, auxilia2);
         DBHelper.save(centurion4);
 
+        Centurion centurion5 = new Centurion("Tertias Micianus", EquipmentType.GLADIUS, 20, 95, cohort3);
+        DBHelper.save(centurion5);
+        Centurion centurion6 = new Centurion("Placus Sorex", EquipmentType.SHIELD, 15, 70, cohort4);
+        DBHelper.save(centurion6);
+        Centurion centurion7 = new Centurion("Plotius Nolus", EquipmentType.PILLA, 17, 85, auxilia3);
+        DBHelper.save(centurion7);
+        Centurion centurion8 = new Centurion("Marcellus Firmus", EquipmentType.GLADIUS, 30, 100, auxilia4);
+        DBHelper.save(centurion8);
+
         //citizens
         Citizen citizen1 = new Citizen("Marcus", EquipmentType.GLADIUS, 4, cohort1);
         DBHelper.save(citizen1);
@@ -52,6 +79,15 @@ public class Runner {
         Citizen citizen4 = new Citizen("Quintus", EquipmentType.PILLA, 15, cohort2);
         DBHelper.save(citizen4);
 
+        Citizen citizen5 = new Citizen("Cassius", EquipmentType.GLADIUS, 4, cohort3);
+        DBHelper.save(citizen5);
+        Citizen citizen6 = new Citizen("Gallus", EquipmentType.SHIELD, 8, cohort3);
+        DBHelper.save(citizen6);
+        Citizen citizen7 = new Citizen("Decimus", EquipmentType.GLADIUS, 12, cohort4);
+        DBHelper.save(citizen7);
+        Citizen citizen8 = new Citizen("Spurius", EquipmentType.PILLA, 15, cohort4);
+        DBHelper.save(citizen8);
+
         //provincials
         Provincial provincial1 = new Provincial("Birgir", EquipmentType.PILLA, 18, auxilia1, OriginType.GOTH);
         DBHelper.save(provincial1);
@@ -61,6 +97,18 @@ public class Runner {
         DBHelper.save(provincial3);
         Provincial provincial4 = new Provincial("Vercingetorix", EquipmentType.SHIELD, 24, auxilia1, OriginType.GAUL);
         DBHelper.save(provincial4);
+
+        Provincial provincial5 = new Provincial("Judocus", EquipmentType.PILLA, 18, auxilia3, OriginType.VANDAL);
+        DBHelper.save(provincial5);
+        Provincial provincial6 = new Provincial("Ritic", EquipmentType.PILLA, 3, auxilia3, OriginType.VANDAL);
+        DBHelper.save(provincial6);
+        Provincial provincial7 = new Provincial("Asterix", EquipmentType.GLADIUS, 10, auxilia4, OriginType.GAUL);
+        DBHelper.save(provincial7);
+        Provincial provincial8 = new Provincial("Obelix", EquipmentType.SHIELD, 24, auxilia4, OriginType.GAUL);
+        DBHelper.save(provincial8);
+
+        //battles
+        Battle battle = new Battle("Battle of Dyrrhachium");
 
         //CRUD tests
         legion.setName("The 22nd");

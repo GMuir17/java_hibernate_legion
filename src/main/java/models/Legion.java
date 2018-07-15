@@ -65,7 +65,8 @@ public class Legion {
         this.units.add(unit);
     }
 
-    @OneToOne(mappedBy = "legion", fetch = FetchType.LAZY)
+    @ManyToOne
+    @JoinColumn(name = "battle_id", nullable = false)
     public Battle getBattle() {
         return battle;
     }

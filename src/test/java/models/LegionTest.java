@@ -89,7 +89,7 @@ public class LegionTest {
     @Test
     public void canSetBattle() {
         Legion testLegion = new Legion("Test");
-        Battle testBattle = new Battle("Testing", legion, testLegion);
+        Battle testBattle = new Battle("Testing");
         legion.setBattle(testBattle);
         assertEquals(testBattle, legion.getBattle());
     }

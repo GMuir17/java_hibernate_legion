@@ -1,6 +1,8 @@
 package models;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "battles")
@@ -8,15 +10,13 @@ public class Battle {
 
     private int id;
     private String name;
-    private Legion legion1;
-    private Legion legion2;
+    private List<Legion> legions;
 
     public Battle() {}
 
-    public Battle(String name, Legion legion1, Legion legion2) {
+    public Battle(String name) {
         this.name = name;
-        this.legion1 = legion1;
-        this.legion2 = legion2;
+        this.legions = new ArrayList<Legion>();
     }
 
     @Id
@@ -39,23 +39,16 @@ public class Battle {
         this.name = name;
     }
 
-    @OneToOne
-    @JoinColumn(name = "legion_id", nullable = false)
-    public Legion getLegion1() {
-        return legion1;
+    @OneToMany(mappedBy = "battle", fetch = FetchType.LAZY)
+    public List<Legion> getLegions() {
+        return legions;
     }
 
-    public void setLegion1(Legion legion1) {
-        this.legion1 = legion1;
+    public void setLegions(List<Legion> legions) {
+        this.legions = legions;
     }
 
-    @OneToOne
-    @JoinColumn(name = "legion_id", nullable = false)
-    public Legion getLegion2() {
-        return legion2;
-    }
-
-    public void setLegion2(Legion legion2) {
-        this.legion2 = legion2;
+    public void addLegion(Legion legion) {
+        this.legions.add(legion);
     }
 }
