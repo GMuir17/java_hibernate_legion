@@ -10,12 +10,14 @@ public class General {
     private String name;
     private Legion legion;
     // TODO: add int budget which will be used to pay soldiers
+    private int budget;
 
     public General() {}
 
-    public General(String name, Legion legion) {
+    public General(String name, Legion legion, int budget) {
         this.name = name;
         this.legion = legion;
+        this.budget = budget;
     }
 
     @Id
@@ -46,5 +48,21 @@ public class General {
 
     public void setLegion(Legion legion) {
         this.legion = legion;
+    }
+
+    public int getBudget() {
+        return budget;
+    }
+
+    public void setBudget(int budget) {
+        this.budget = budget;
+    }
+
+    public void addToBudget(int money) {
+        this.budget += money;
+    }
+
+    public void removeFromBudget(int money) {
+        this.budget -= money;
     }
 }

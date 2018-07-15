@@ -17,7 +17,7 @@ public class Runner {
         DBHelper.save(legion);
 
         //generals
-        General general = new General("Julius Caesar", legion);
+        General general = new General("Julius Caesar", legion, 100);
         DBHelper.save(general);
 
         //cohorts
