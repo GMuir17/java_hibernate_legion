@@ -23,7 +23,6 @@ public abstract class Soldier {
         this.equipment = equipment;
         this.yearsOfService = yearsOfService;
         this.availability = true;
-        this.purse = purse;
     }
 
     @Id

@@ -41,4 +41,15 @@ public class BattleTest {
         battle.setLegion2(testLegion);
         assertEquals(testLegion, battle.getLegion2());
     }
+
+    @Test
+    public void hasId() {
+        assertEquals(0, battle.getId());
+    }
+
+    @Test
+    public void canSetId() {
+        battle.setId(5);
+        assertEquals(5, battle.getId());
+    }
 }
