@@ -39,7 +39,8 @@ public class Battle {
         this.name = name;
     }
 
-
+    @OneToOne
+    @JoinColumn(name = "legion_id", nullable = false)
     public Legion getLegion1() {
         return legion1;
     }
@@ -48,6 +49,8 @@ public class Battle {
         this.legion1 = legion1;
     }
 
+    @OneToOne
+    @JoinColumn(name = "legion_id", nullable = false)
     public Legion getLegion2() {
         return legion2;
     }

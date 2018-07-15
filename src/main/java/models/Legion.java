@@ -65,6 +65,7 @@ public class Legion {
         this.units.add(unit);
     }
 
+    @OneToOne(mappedBy = "legion", fetch = FetchType.LAZY)
     public Battle getBattle() {
         return battle;
     }
