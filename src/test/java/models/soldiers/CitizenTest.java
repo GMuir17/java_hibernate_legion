@@ -101,4 +101,10 @@ public class CitizenTest {
         assertEquals(10, citizen.getPurse());
     }
 
+    @Test
+    public void canAddToPurse() {
+        citizen.addToPurse(100);
+        assertEquals(100, citizen.getPurse());
+    }
+
 }

@@ -303,7 +303,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="CenturionTest.canChangeAvailabilityToFalseWithoutSetter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CenturionTest.canAddToPurse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LegionWkndHW" />
       <extension name="coverage">
         <pattern>
@@ -315,7 +315,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="models.soldiers" />
       <option name="MAIN_CLASS_NAME" value="models.soldiers.CenturionTest" />
-      <option name="METHOD_NAME" value="canChangeAvailabilityToFalseWithoutSetter" />
+      <option name="METHOD_NAME" value="canAddToPurse" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -412,18 +412,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.Runner" />
-      <item itemvalue="JUnit.CenturionTest.canChangeAvailabilityToFalseWithoutSetter" />
       <item itemvalue="JUnit.All in LegionWkndHW" />
       <item itemvalue="JUnit.CenturionTest.hasPurse" />
       <item itemvalue="JUnit.CenturionTest.canSetPurse" />
+      <item itemvalue="JUnit.CenturionTest.canAddToPurse" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.All in LegionWkndHW" />
+        <item itemvalue="JUnit.CenturionTest.canAddToPurse" />
         <item itemvalue="JUnit.CenturionTest.canSetPurse" />
         <item itemvalue="JUnit.CenturionTest.hasPurse" />
         <item itemvalue="Application.Runner" />
-        <item itemvalue="JUnit.CenturionTest.canChangeAvailabilityToFalseWithoutSetter" />
       </list>
     </recent_temporary>
   </component>

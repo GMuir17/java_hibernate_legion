@@ -87,5 +87,9 @@ public abstract class Soldier {
         this.purse = purse;
     }
 
+    public void addToPurse(int pay) {
+        this.purse += pay;
+    }
+
 
 }

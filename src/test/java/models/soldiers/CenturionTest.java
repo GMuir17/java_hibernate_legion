@@ -112,4 +112,10 @@ public class CenturionTest {
         centurion.setPurse(10);
         assertEquals(10, centurion.getPurse());
     }
+
+    @Test
+    public void canAddToPurse() {
+        centurion.addToPurse(100);
+        assertEquals(100, centurion.getPurse());
+    }
 }

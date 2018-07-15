@@ -111,4 +111,10 @@ public class ProvincialTest {
         provincial.setPurse(10);
         assertEquals(10, provincial.getPurse());
     }
+
+    @Test
+    public void canAddToPurse() {
+        provincial.addToPurse(100);
+        assertEquals(100, provincial.getPurse());
+    }
 }
