@@ -1,5 +1,6 @@
-package models;
+package models.units;
 
+import models.Legion;
 import models.soldiers.Centurion;
 import models.soldiers.Citizen;
 import models.units.Cohort;

@@ -1,5 +1,6 @@
-package models;
+package models.units;
 
+import models.Legion;
 import models.soldiers.Centurion;
 import models.soldiers.Provincial;
 import models.units.Auxilia;

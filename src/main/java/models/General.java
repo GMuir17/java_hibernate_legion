@@ -50,6 +50,7 @@ public class General {
         this.legion = legion;
     }
 
+    @Column(name = "budget")
     public int getBudget() {
         return budget;
     }

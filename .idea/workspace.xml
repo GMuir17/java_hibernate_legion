@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fd68233b-af9b-4d3e-bc20-231a605ed198" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/models/Battle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/models/BattleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/models/General.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/General.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/models/GeneralTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/models/GeneralTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/models/AuxiliaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/models/units/AuxiliaTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/models/CohortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/models/units/CohortTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/models/General.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/models/General.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -18,13 +23,31 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="Runner.java" pinned="false" current-in-tab="false">
+          <file leaf-file-name="Runner.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/Runner.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="294">
-                  <caret line="80" column="244" selection-start-line="80" selection-start-column="244" selection-end-line="80" selection-end-column="244" />
+                <state relative-caret-position="300">
+                  <caret line="19" column="66" selection-start-line="19" selection-start-column="66" selection-end-line="19" selection-end-column="66" />
                   <folding>
                     <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Battle.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/models/Battle.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="210">
+                  <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+                  <folding>
+                    <element signature="e#313#314#0" expanded="true" />
+                    <element signature="e#359#360#0" expanded="true" />
+                    <element signature="e#397#398#0" expanded="true" />
+                    <element signature="e#431#432#0" expanded="true" />
+                    <element signature="e#461#462#0" expanded="true" />
+                    <element signature="e#507#508#0" expanded="true" />
+                    <element signature="e#545#546#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -51,15 +74,20 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="General.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="General.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/models/General.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="529">
-                  <caret line="52" column="28" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
+                <state relative-caret-position="145">
+                  <caret line="52" column="26" selection-start-line="52" selection-start-column="26" selection-end-line="52" selection-end-column="26" />
                   <folding>
+                    <element signature="e#1062#1063#0" expanded="true" />
                     <element signature="e#1091#1092#0" expanded="true" />
                     <element signature="e#1132#1133#0" expanded="true" />
                     <element signature="e#1168#1169#0" expanded="true" />
+                    <element signature="e#1214#1215#0" expanded="true" />
+                    <element signature="e#1249#1250#0" expanded="true" />
+                    <element signature="e#1301#1302#0" expanded="true" />
+                    <element signature="e#1337#1338#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -81,29 +109,15 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="CenturionTest.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/test/java/models/soldiers/CenturionTest.java">
+          <file leaf-file-name="BattleTest.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/test/java/models/BattleTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="285">
-                  <caret line="115" column="3" lean-forward="true" selection-start-line="115" selection-start-column="3" selection-end-line="119" selection-end-column="5" />
+                <state relative-caret-position="240">
+                  <caret line="22" column="49" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <element signature="e#2445#2446#0" expanded="true" />
-                    <element signature="e#2467#2468#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="GeneralTest.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/test/java/models/GeneralTest.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="573">
-                  <caret line="58" column="4" lean-forward="true" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="4" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#1090#1091#0" expanded="true" />
-                    <element signature="e#1120#1121#0" expanded="true" />
+                    <element signature="e#395#396#0" expanded="true" />
+                    <element signature="e#426#427#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -140,7 +154,6 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/db/HibernateUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/Cohort.java" />
-        <option value="$PROJECT_DIR$/src/test/java/models/LegionTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/models/UnitTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/soldiers/EquipmentType.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/soldiers/ProvinceType.java" />
@@ -157,13 +170,16 @@
         <option value="$PROJECT_DIR$/src/main/java/models/soldiers/Provincial.java" />
         <option value="$PROJECT_DIR$/src/main/java/db/DBHelper.java" />
         <option value="$PROJECT_DIR$/src/main/java/db/DBCenturion.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Runner.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/soldiers/Soldier.java" />
         <option value="$PROJECT_DIR$/src/test/java/models/soldiers/CenturionTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/models/soldiers/ProvincialTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/models/soldiers/CitizenTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/models/General.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Runner.java" />
+        <option value="$PROJECT_DIR$/src/test/java/models/LegionTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/models/GeneralTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/models/General.java" />
+        <option value="$PROJECT_DIR$/src/main/java/models/Battle.java" />
+        <option value="$PROJECT_DIR$/src/test/java/models/BattleTest.java" />
       </list>
     </option>
   </component>
@@ -233,15 +249,6 @@
               <item name="legion_hibernate" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="soldiers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LegionWkndHW" type="b2602c69:ProjectViewProjectNode" />
-              <item name="legion_hibernate" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -286,6 +293,11 @@
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="models.units" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -298,28 +310,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.GeneralTest.canRemoveFromBudget">
+  <component name="RunManager" selected="JUnit.BattleTest.canSetLegion2">
+    <configuration name="Runner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Runner" />
+      <module name="LegionWkndHW" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="All in LegionWkndHW" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LegionWkndHW" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="package" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="GeneralTest.canAddToBudget" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BattleTest.canSetLegion1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LegionWkndHW" />
       <extension name="coverage">
         <pattern>
@@ -330,8 +330,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="models" />
-      <option name="MAIN_CLASS_NAME" value="models.GeneralTest" />
-      <option name="METHOD_NAME" value="canAddToBudget" />
+      <option name="MAIN_CLASS_NAME" value="models.BattleTest" />
+      <option name="METHOD_NAME" value="canSetLegion1" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -342,7 +342,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="GeneralTest.canRemoveFromBudget" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BattleTest.canSetLegion2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LegionWkndHW" />
       <extension name="coverage">
         <pattern>
@@ -353,8 +353,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="models" />
-      <option name="MAIN_CLASS_NAME" value="models.GeneralTest" />
-      <option name="METHOD_NAME" value="canRemoveFromBudget" />
+      <option name="MAIN_CLASS_NAME" value="models.BattleTest" />
+      <option name="METHOD_NAME" value="canSetLegion2" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -365,7 +365,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="GeneralTest.canSetBudget" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BattleTest.hasLegion1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LegionWkndHW" />
       <extension name="coverage">
         <pattern>
@@ -376,8 +376,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="models" />
-      <option name="MAIN_CLASS_NAME" value="models.GeneralTest" />
-      <option name="METHOD_NAME" value="canSetBudget" />
+      <option name="MAIN_CLASS_NAME" value="models.BattleTest" />
+      <option name="METHOD_NAME" value="hasLegion1" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -388,7 +388,7 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="GeneralTest.hasBudget" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BattleTest.hasLegion2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LegionWkndHW" />
       <extension name="coverage">
         <pattern>
@@ -399,8 +399,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="models" />
-      <option name="MAIN_CLASS_NAME" value="models.GeneralTest" />
-      <option name="METHOD_NAME" value="hasBudget" />
+      <option name="MAIN_CLASS_NAME" value="models.BattleTest" />
+      <option name="METHOD_NAME" value="hasLegion2" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -450,19 +450,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="JUnit.All in LegionWkndHW" />
-      <item itemvalue="JUnit.GeneralTest.hasBudget" />
-      <item itemvalue="JUnit.GeneralTest.canSetBudget" />
-      <item itemvalue="JUnit.GeneralTest.canAddToBudget" />
-      <item itemvalue="JUnit.GeneralTest.canRemoveFromBudget" />
+      <item itemvalue="Application.Runner" />
+      <item itemvalue="JUnit.BattleTest.hasLegion1" />
+      <item itemvalue="JUnit.BattleTest.canSetLegion1" />
+      <item itemvalue="JUnit.BattleTest.hasLegion2" />
+      <item itemvalue="JUnit.BattleTest.canSetLegion2" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.GeneralTest.canRemoveFromBudget" />
-        <item itemvalue="JUnit.GeneralTest.canAddToBudget" />
-        <item itemvalue="JUnit.GeneralTest.canSetBudget" />
-        <item itemvalue="JUnit.GeneralTest.hasBudget" />
-        <item itemvalue="JUnit.All in LegionWkndHW" />
+        <item itemvalue="JUnit.BattleTest.canSetLegion2" />
+        <item itemvalue="JUnit.BattleTest.hasLegion2" />
+        <item itemvalue="JUnit.BattleTest.canSetLegion1" />
+        <item itemvalue="JUnit.BattleTest.hasLegion1" />
+        <item itemvalue="Application.Runner" />
       </list>
     </recent_temporary>
   </component>
@@ -480,18 +480,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_LegionWkndHW - 2018.07.14 at 13h 35m 19s.xml">
-      <configuration name="All in LegionWkndHW" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_LegionWkndHW - 2018.07.14 at 13h 37m 24s.xml">
-      <configuration name="All in LegionWkndHW" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_LegionWkndHW - 2018.07.14 at 13h 37m 34s.xml">
-      <configuration name="All in LegionWkndHW" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_LegionWkndHW - 2018.07.14 at 13h 40m 52s.xml">
-      <configuration name="All in LegionWkndHW" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_LegionWkndHW - 2018.07.14 at 13h 41m 32s.xml">
       <configuration name="All in LegionWkndHW" configurationId="JUnit" />
     </history-entry>
@@ -509,6 +497,18 @@
     </history-entry>
     <history-entry file="All_in_LegionWkndHW - 2018.07.15 at 14h 56m 45s.xml">
       <configuration name="All in LegionWkndHW" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GeneralTest_hasBudget - 2018.07.15 at 14h 59m 12s.xml">
+      <configuration name="GeneralTest.hasBudget" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GeneralTest_canSetBudget - 2018.07.15 at 14h 59m 50s.xml">
+      <configuration name="GeneralTest.canSetBudget" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GeneralTest_canAddToBudget - 2018.07.15 at 15h 01m 31s.xml">
+      <configuration name="GeneralTest.canAddToBudget" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GeneralTest_canRemoveFromBudget - 2018.07.15 at 15h 02m 00s.xml">
+      <configuration name="GeneralTest.canRemoveFromBudget" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -609,24 +609,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/models/LegionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="40" column="9" lean-forward="true" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#310#311#0" expanded="true" />
-            <element signature="e#331#332#0" expanded="true" />
-            <element signature="e#579#580#0" expanded="true" />
-            <element signature="e#626#627#0" expanded="true" />
-            <element signature="e#1173#1179#0" expanded="true" />
-            <element signature="e#1337#1343#0" expanded="true" />
-            <element signature="e#1483#1484#0" expanded="true" />
-            <element signature="e#1513#1514#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/models/soldiers/OriginType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -651,7 +633,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/models/CohortTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/models/units/CohortTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="74" column="3" selection-start-line="74" selection-start-column="3" selection-end-line="84" selection-end-column="5" />
@@ -663,7 +645,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/models/AuxiliaTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/models/units/AuxiliaTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="801">
           <caret line="83" column="37" selection-start-line="83" selection-start-column="37" selection-end-line="83" selection-end-column="37" />
@@ -771,28 +753,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Runner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="80" column="244" selection-start-line="80" selection-start-column="244" selection-end-line="80" selection-end-column="244" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/models/soldiers/CenturionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="115" column="3" lean-forward="true" selection-start-line="115" selection-start-column="3" selection-end-line="119" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2445#2446#0" expanded="true" />
-            <element signature="e#2467#2468#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/models/soldiers/CitizenTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="284">
@@ -838,26 +798,91 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/General.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/models/LegionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="52" column="28" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
+        <state relative-caret-position="145">
+          <caret line="54" column="60" selection-start-line="54" selection-start-column="60" selection-end-line="54" selection-end-column="60" />
           <folding>
-            <element signature="e#1091#1092#0" expanded="true" />
-            <element signature="e#1132#1133#0" expanded="true" />
-            <element signature="e#1168#1169#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/models/GeneralTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="573">
-          <caret line="58" column="4" lean-forward="true" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="4" />
+        <state relative-caret-position="419">
+          <caret line="72" column="44" selection-start-line="72" selection-start-column="44" selection-end-line="72" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1090#1091#0" expanded="true" />
             <element signature="e#1120#1121#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/General.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="52" column="26" selection-start-line="52" selection-start-column="26" selection-end-line="52" selection-end-column="26" />
+          <folding>
+            <element signature="e#1062#1063#0" expanded="true" />
+            <element signature="e#1091#1092#0" expanded="true" />
+            <element signature="e#1132#1133#0" expanded="true" />
+            <element signature="e#1168#1169#0" expanded="true" />
+            <element signature="e#1214#1215#0" expanded="true" />
+            <element signature="e#1249#1250#0" expanded="true" />
+            <element signature="e#1301#1302#0" expanded="true" />
+            <element signature="e#1337#1338#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/models/soldiers/CenturionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="115" column="3" lean-forward="true" selection-start-line="115" selection-start-column="3" selection-end-line="119" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2445#2446#0" expanded="true" />
+            <element signature="e#2467#2468#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/Battle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+          <folding>
+            <element signature="e#313#314#0" expanded="true" />
+            <element signature="e#359#360#0" expanded="true" />
+            <element signature="e#397#398#0" expanded="true" />
+            <element signature="e#431#432#0" expanded="true" />
+            <element signature="e#461#462#0" expanded="true" />
+            <element signature="e#507#508#0" expanded="true" />
+            <element signature="e#545#546#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Runner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="19" column="66" selection-start-line="19" selection-start-column="66" selection-end-line="19" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/models/BattleTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="22" column="49" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#395#396#0" expanded="true" />
+            <element signature="e#426#427#0" expanded="true" />
           </folding>
         </state>
       </provider>
