@@ -14,6 +14,7 @@ public class Legion {
     private String name;
     private General general;
     private List<Unit> units;
+    private Battle battle;
 
     public Legion() {}
 
@@ -62,5 +63,13 @@ public class Legion {
 
     public void addUnit(Unit unit) {
         this.units.add(unit);
+    }
+
+    public Battle getBattle() {
+        return battle;
+    }
+
+    public void setBattle(Battle battle) {
+        this.battle = battle;
     }
 }

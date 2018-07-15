@@ -81,5 +81,16 @@ public class LegionTest {
         assertEquals(1, legion.getUnits().size());
     }
 
+    @Test
+    public void hasBattle() {
+        assertEquals(null, legion.getBattle());
+    }
 
+    @Test
+    public void canSetBattle() {
+        Legion testLegion = new Legion("Test");
+        Battle testBattle = new Battle("Testing", legion, testLegion);
+        legion.setBattle(testBattle);
+        assertEquals(testBattle, legion.getBattle());
+    }
 }
