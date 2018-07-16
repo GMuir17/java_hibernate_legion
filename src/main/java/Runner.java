@@ -5,6 +5,7 @@ import models.Legion;
 import models.soldiers.*;
 import models.units.Auxilia;
 import models.units.Cohort;
+import models.units.Unit;
 
 import javax.persistence.GeneratedValue;
 import java.util.List;
@@ -131,7 +132,9 @@ public class Runner {
 
 //        List<Soldier> generalsSoldiers = DBGeneral.getSoldiersOfGeneral(general);
 
-        List<Soldier> soldiersInLegion = DBLegion.getSoldiersinLegion(legion);
+        List<Unit> unitsInLegion = DBLegion.getUnitsInLegion(legion);
+
+        List<Soldier> soldiersInLegion = DBLegion.getSoldiersInLegion(legion);
 
 
 
