@@ -138,6 +138,8 @@ public class Runner {
 
 //        List<Soldier> soldiersInLegion = DBLegion.getSoldiersInLegion(legion);
 
+        DBGeneral.paySoldier(general, 100, centurion1);
+
 
 
         //TODO: create DBGeneral with the method paySoldier(Soldier soldier) which takes money from General's budget and transfers to soldiers. Or maybe payUnit(Unit unit) which does the same thing to a unit before distributing it to soldiers??

@@ -13,6 +13,12 @@ public class DBGeneral {
 
     private static Session session;
 
+    public static void paySoldier(General general, int pay, Soldier soldier) {
+        general.paySoldier(pay, soldier);
+        DBHelper.update(general);
+        DBHelper.update(soldier);
+    }
+
     //TODO: find out how to got through the general's legion to get his soldiers
 //    public static List<Soldier> getSoldiersOfGeneral(General general) {
 //        session = HibernateUtil.getSessionFactory().openSession();
