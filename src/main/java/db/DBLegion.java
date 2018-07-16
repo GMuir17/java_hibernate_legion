@@ -1,31 +1,24 @@
 package db;
 
-import models.Battle;
 import models.Legion;
+import models.soldiers.Soldier;
 import org.hibernate.Criteria;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.criterion.Restrictions;
 
 import java.util.List;
-import java.util.ResourceBundle;
 
-public class DBBattle {
+public class DBLegion {
 
     private static Session session;
 
-    public static void addLegionToBattle(Battle battle, Legion legion) {
-        battle.addLegion(legion);
-        DBHelper.update(battle);
-    }
-
-    public static List<Legion> getLegionsInBattle(Battle battle) {
+    public static List<Soldier> getSoldiersinLegion(Legion legion) {
         session = HibernateUtil.getSessionFactory().openSession();
-        List<Legion> results = null;
+        List<Soldier> results = null;
         try {
-            Criteria cr = session.createCriteria(Legion.class);
-            cr.createAlias("battle", "battles");
-            cr.add(Restrictions.eq("battle_id", battle.getId()));
+            Criteria cr = session.createCriteria(Soldier.class);
+            cr.add(Restrictions.eq("id", legion.getId()));
             results = cr.list();
         }
         catch (HibernateException e) {
@@ -36,4 +29,5 @@ public class DBBattle {
         }
         return results;
     }
+
 }

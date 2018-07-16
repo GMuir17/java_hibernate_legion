@@ -41,8 +41,8 @@ public class Battle {
         this.name = name;
     }
 
-    @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
     @ManyToMany
+    @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
     @JoinTable(
             name = "battles_legions",
             joinColumns = {@JoinColumn(name = "battle_id", nullable = false, updatable = false)},

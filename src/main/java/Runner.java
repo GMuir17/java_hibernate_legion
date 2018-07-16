@@ -1,6 +1,4 @@
-import db.DBBattle;
-import db.DBCenturion;
-import db.DBHelper;
+import db.*;
 import models.Battle;
 import models.General;
 import models.Legion;
@@ -115,7 +113,7 @@ public class Runner {
         DBBattle.addLegionToBattle(battle, legion2);
 
         //CRUD tests
-        legion.setName("The 22nd");
+        legion.setName("The 10th");
         DBHelper.update(legion);
 
         DBHelper.delete(provincial4);
@@ -126,15 +124,19 @@ public class Runner {
 
         Soldier foundSoldier = DBHelper.findByName(Centurion.class, "Gaius Crastinus");
 
+        //Fancier queries
         List<Centurion> sortedCenturions = DBCenturion.sortByPopularity();
 
-        List<Legion> legionsInBattle = DBBattle.getLegionsInBattle(battle);
+//        List<Legion> legionsInBattle = DBBattle.getLegionsInBattle(battle);
+
+//        List<Soldier> generalsSoldiers = DBGeneral.getSoldiersOfGeneral(general);
+
+        List<Soldier> soldiersInLegion = DBLegion.getSoldiersinLegion(legion);
 
 
 
         //TODO: create DBGeneral with the method paySoldier(Soldier soldier) which takes money from General's budget and transfers to soldiers. Or maybe payUnit(Unit unit) which does the same thing to a unit before distributing it to soldiers??
 
-        //TODO: change the battle/legion relationship to many to many
     }
 
 }

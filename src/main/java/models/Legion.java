@@ -66,8 +66,8 @@ public class Legion {
         this.units.add(unit);
     }
 
-    @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
     @ManyToMany
+    @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
     @JoinTable(
             name = "battles_legions",
             joinColumns = {@JoinColumn(name = "legion_id", nullable = false, updatable = false)},
