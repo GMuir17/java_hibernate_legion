@@ -1,5 +1,8 @@
 package models;
 
+import models.soldiers.Centurion;
+import models.soldiers.EquipmentType;
+import models.units.Cohort;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -9,9 +12,13 @@ public class GeneralTest {
 
     General general;
     Legion legion;
+    Centurion centurion;
+    Cohort cohort;
 
     @Before
     public void before() {
+        this.cohort = new Cohort();
+        this.centurion = new Centurion("Tester", EquipmentType.PILLA, 10, 90, cohort);
         this.legion = new Legion("The 10th");
         this.general = new General("Agrippa", legion, 100);
     }
@@ -71,6 +78,13 @@ public class GeneralTest {
     public void canRemoveFromBudget() {
         general.removeFromBudget(50);
         assertEquals(50, general.getBudget());
+    }
+
+    @Test
+    public void canPaySoldier() {
+        general.paySoldier(20, centurion);
+        assertEquals(80, general.getBudget());
+        assertEquals(20, centurion.getPurse());
     }
 
 }

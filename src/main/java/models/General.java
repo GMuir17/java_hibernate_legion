@@ -1,5 +1,7 @@
 package models;
 
+import models.soldiers.Soldier;
+
 import javax.persistence.*;
 
 @Entity
@@ -64,5 +66,10 @@ public class General {
 
     public void removeFromBudget(int money) {
         this.budget -= money;
+    }
+
+    public void paySoldier(int pay, Soldier soldier) {
+        soldier.addToPurse(pay);
+        removeFromBudget(pay);
     }
 }
