@@ -128,12 +128,15 @@ public class Runner {
         //Fancier queries
         List<Centurion> sortedCenturions = DBCenturion.sortByPopularity();
 
-//        List<Legion> legionsInBattle = DBBattle.getLegionsInBattle(battle);
+        //TODO: find out why it's only returning a list of size 1
+        List<Legion> legionsInBattle = DBBattle.getLegionsInBattle(battle);
 
-//        List<Soldier> generalsSoldiers = DBGeneral.getSoldiersOfGeneral(general);
+        //TODO: find out why it's only returning a list of size 1
+        List<Soldier> generalsSoldiers = DBGeneral.getSoldiersOfGeneral(general);
 
         List<Unit> unitsInLegion = DBLegion.getUnitsInLegion(legion);
 
+        //TODO: find out why it's only returning a list of size 1
         List<Soldier> soldiersInUnit = DBUnit.getSoldiersInUnit(cohort1);
 
 //        List<Soldier> soldiersInLegion = DBLegion.getSoldiersInLegion(legion);

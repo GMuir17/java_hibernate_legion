@@ -25,7 +25,7 @@ public class DBBattle {
         try {
             Criteria cr = session.createCriteria(Legion.class);
             cr.createAlias("battle", "battles");
-            cr.add(Restrictions.eq("battle_id", battle.getId()));
+            cr.add(Restrictions.eq("id", battle.getId()));
             results = cr.list();
         }
         catch (HibernateException e) {

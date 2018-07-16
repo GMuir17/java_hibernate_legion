@@ -20,22 +20,22 @@ public class DBGeneral {
     }
 
     //TODO: find out how to got through the general's legion to get his soldiers
-//    public static List<Soldier> getSoldiersOfGeneral(General general) {
-//        session = HibernateUtil.getSessionFactory().openSession();
-//        List<Soldier> results = null;
-//        try {
-//            Criteria cr = session.createCriteria(Soldier.class);
-//            cr.add(Restrictions.eq("id", general.getId()));
-//            results = cr.list();
-//        }
-//        catch (HibernateException e) {
-//            e.printStackTrace();
-//        }
-//        finally {
-//         session.close();
-//        }
-//        return results;
-//    }
+    public static List<Soldier> getSoldiersOfGeneral(General general) {
+        session = HibernateUtil.getSessionFactory().openSession();
+        List<Soldier> results = null;
+        try {
+            Criteria cr = session.createCriteria(Soldier.class);
+            cr.add(Restrictions.eq("id", general.getLegion().getId()));
+            results = cr.list();
+        }
+        catch (HibernateException e) {
+            e.printStackTrace();
+        }
+        finally {
+         session.close();
+        }
+        return results;
+    }
 
 
 }
