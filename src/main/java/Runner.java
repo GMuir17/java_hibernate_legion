@@ -134,7 +134,9 @@ public class Runner {
 
         List<Unit> unitsInLegion = DBLegion.getUnitsInLegion(legion);
 
-        List<Soldier> soldiersInLegion = DBLegion.getSoldiersInLegion(legion);
+        List<Soldier> soldiersInUnit = DBUnit.getSoldiersInUnit(cohort1);
+
+//        List<Soldier> soldiersInLegion = DBLegion.getSoldiersInLegion(legion);
 
 
 
